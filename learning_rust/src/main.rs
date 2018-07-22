@@ -1,4 +1,9 @@
 fn main() {
-    let (x, y) = (1, 2);
-    
+    let mut y;
+    {
+        let x = 1;
+
+        y = &x;
+    }
+    println!("{}", y);
 }
